@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Survey Form</title>
+	<script>
+		function hello() {
+			var a = confirm("Have you fill the survey form?");
+			if (a) {
+				alert("Thanks to fill the survey form");
+			}else
+			{
+				alert("you have missed a question");
+			}
+		}
+	</script>
+	<style>
+		/*.container
+		{
+			border: 3px solid green;
+			height: 930px;
+		}*/
+		.heading h4
+		{
+			margin-top: -20px;
+		}
+		.heading h4,h1
+		{
+			margin-left: 15px;
+		}
+		.heading
+		{
+			background: black;
+			color: white;
+		}
+		.question h3
+		{
+			margin-left: 30px;
+		}
+		.question input
+		{
+			margin-left: 50px;
+		}
+		input
+		{
+			accent-color: lime;
+		}
+		input[type="button"]
+		{
+			width: 200px;
+			padding: 10px;
+			background: black;
+			color: white;
+			font-size: 20px;
+			border-radius: 10px;
+		}
+		input[type="button"]:hover
+		{
+			box-shadow: 3px 3px 3px red;
+			background-color: blue;
+		}
+		.question:hover
+		{
+			background: black;
+			color: white;
+		}
+		::-webkit-scrollbar
+		{
+			width: 20px;
+		}
+		::-webkit-scrollbar-track
+		{
+			background: black;
+			border-radius: 10px;
+		}
+		::-webkit-scrollbar-thumb
+		{
+			background: linear-gradient(red,lime);
+			border-radius: 10px;
+		}
+		@media (max-width:786px)
+		{
+			.heading
+			{
+				background: red;
+				color: white;
+			}
+		}
+		@media (max-width:480px)
+		{
+			.heading
+			{
+				background: blue;
+				color: white;
+			}
+		}
+		
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="heading">
+			<h1><b><i>Website Survey</i></b></h1>
+			<h4>Please fill in the website information.</h4>
+		</div>
+						<br>
+						<hr>
+						<br>
+		<div class="question">
+			<h3>1)How did you hear about this website?</h3>
+			<input type="radio" name="radio">Social Media<br>
+			<input type="radio" name="radio">Advertising<br>
+			<input type="radio" name="radio">Search Engine<br>
+			<input type="radio" name="radio">Friends<br>
+			<input type="radio" name="radio">Other<br><br><br>
+
+			<h3>2)What browser do you use?</h3>
+			<input type="radio" name="radio1">Google Chrome<br>
+			<input type="radio" name="radio1">Firefox<br>
+			<input type="radio" name="radio1">IE<br>
+			<input type="radio" name="radio1">Safari<br>
+			<input type="radio" name="radio1">Opera<br><br><br>
+
+			<h3>3)Which device did you use to access the website?</h3>
+			<input type="radio" name="radio2">Desktop/Laptop<br>
+			<input type="radio" name="radio2">Pad<br>
+			<input type="radio" name="radio2">Mobile Device<br><br><br>
+
+			<h3>4)Are you sure that you found out this website</h3>
+			<input type="radio" name="radio3">Very Satisfied<br>
+			<input type="radio" name="radio3">Satisfied<br>
+			<input type="radio" name="radio3">Neutral<br>
+			<input type="radio" name="radio3">Unsatisfied<br>
+			<input type="radio" name="radio3">Very Unsatisfied<br><br>
+
+			<input type="button" value="submit" onclick="hello()">
+
+		</div>
+	</div>
+</body>
+</html>
